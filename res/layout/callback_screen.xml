@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView android:id="@+id/textView1" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/selectInstructions"
+		android:textAppearance="?android:attr/textAppearanceLarge"></TextView>
+	<LinearLayout android:layout_width="fill_parent"
+		android:id="@+id/checkBoxGroup" android:orientation="vertical"
+		android:layout_height="fill_parent">
+		<CheckBox android:text="CheckBox" android:layout_height="wrap_content"
+			android:id="@+id/checkBox1" android:layout_width="wrap_content"></CheckBox>
+		<CheckBox android:text="CheckBox" android:layout_height="wrap_content"
+			android:id="@+id/checkBox2" android:layout_width="wrap_content"></CheckBox>
+		<CheckBox android:text="CheckBox" android:layout_height="wrap_content"
+			android:id="@+id/checkBox3" android:layout_width="wrap_content"></CheckBox>
+		<CheckBox android:text="CheckBox" android:layout_height="wrap_content"
+			android:id="@+id/checkBox4" android:layout_width="wrap_content"></CheckBox>
+		<CheckBox android:text="CheckBox" android:layout_height="wrap_content"
+			android:id="@+id/checkBox5" android:layout_width="wrap_content"></CheckBox>
+	</LinearLayout>
+</LinearLayout>

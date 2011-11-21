@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView android:layout_height="wrap_content" android:id="@+id/loadCounter"
+		android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"
+		android:text="@integer/rotateCount"></TextView>
+	<RelativeLayout android:id="@+id/relativeLayout1"
+		android:layout_height="fill_parent" android:layout_width="fill_parent">
+		<Button android:layout_width="wrap_content" android:id="@+id/locBtn"
+			android:layout_height="wrap_content" android:text="@string/locBtn"
+			android:layout_alignBaseline="@+id/sigBtn"
+			android:layout_alignBottom="@+id/sigBtn" android:layout_toLeftOf="@+id/sigBtn"
+			android:layout_marginRight="31dp"></Button>
+		<Button android:layout_width="wrap_content" android:id="@+id/rxBtn"
+			android:layout_height="wrap_content" android:text="@string/rxBtn"
+			android:layout_alignBaseline="@+id/sigBtn"
+			android:layout_alignBottom="@+id/sigBtn" android:layout_toRightOf="@+id/sigBtn"
+			android:layout_marginLeft="33dp"></Button>
+		<Button android:layout_width="wrap_content" android:text="@string/strengthBtn"
+			android:layout_height="wrap_content" android:id="@+id/sigBtn"
+			android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+			android:layout_marginTop="95dp"></Button>
+		<Button android:layout_width="wrap_content" android:text="@string/buttonLabel"
+			android:layout_height="wrap_content" android:id="@+id/closeBtn"
+			android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+			android:layout_marginBottom="25dp"></Button>
+	</RelativeLayout>
+</LinearLayout>

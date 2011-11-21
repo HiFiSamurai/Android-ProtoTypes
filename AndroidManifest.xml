@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.proto" android:versionCode="1" android:versionName="1.0">
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.CAMERA"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+	<uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+
+	<application android:icon="@drawable/icon" android:label="@string/appName"
+		android:name=".ProtoCore" android:enabled="true" android:debuggable="true">
+		<uses-library android:name="com.google.android.maps"></uses-library>
+		<activity android:name=".activities.ProtoAppActivity"
+			android:launchMode="singleTask" android:label="@string/appName">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activities.SecondScreen"></activity>
+		<activity android:name=".activities.CallbackScreen"></activity>
+		<activity android:name=".activities.maps.MapProto"></activity>
+		<activity android:name=".camera.CameraActivity"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".camera.VideoActivity"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".camera.CameraDetailedReviewActivity"></activity>
+		<activity android:name=".camera.PhotoList"></activity>
+		<activity android:name=".list.DynamicListActivity"></activity>
+		<activity android:name=".camera.VideoList"></activity>
+		<activity android:name=".camera.VideoPlayer"
+			android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation"></activity>
+		<activity android:name=".contacts.ContactScanner"></activity>
+		<activity android:name="org.achartengine.GraphicalActivity" />
+
+		<service android:name="ProtoService"></service>
+
+		<!-- Broadcast Receiver that will process AppWidget updates -->
+		<receiver android:name=".ProtoWidget" android:label="@string/appName">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/proto_widget" />
+		</receiver>
+	</application>
+</manifest>

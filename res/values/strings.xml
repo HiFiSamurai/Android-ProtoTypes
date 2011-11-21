@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="helloLand">ProtoAppActivity!</string>
+	<string name="helloPort">ProtoAppActivity!(SideWays)</string>
+	<string name="appName">ProtoApp</string>
+	<string name="menuInsert">Next</string>
+	<string name="buttonLabel">Close</string>
+	<string name="strengthBtn">SigStr</string>
+	<string name="locBtn">Geo</string>
+	<string name="rxBtn">Rx</string>
+	<string name="popupMSG">Welcome Back</string>
+	<string name="errorMSG">I\'m Afraid I Can\'t Do That...</string>
+	<string name="toggleON">Active</string>
+	<string name="toggleOFF">Inactive</string>
+	<string name="selectInstructions">Check Some Boxes</string>
+
+	<!-- Widget Stuff -->
+	<string name="widget_text">Proto Widget</string>
+</resources>

@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:orientation="vertical"
+	android:layout_gravity="center" android:layout_height="wrap_content"
+	android:background="@drawable/widget" android:id="@+id/proto_widget">
+
+	<TextView android:id="@+id/widget_textview" android:text="@string/widget_text"
+		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		android:layout_marginTop="5dip" android:padding="10dip"
+		android:textColor="@android:color/black" />
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<RelativeLayout android:id="@+id/relativeLayout1"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<Spinner android:layout_toRightOf="@+id/toggleButton1"
+			android:layout_height="wrap_content" android:layout_alignTop="@+id/spinner1"
+			android:layout_width="wrap_content" android:id="@+id/spinner2"></Spinner>
+		<Button android:layout_alignParentTop="true"
+			android:layout_marginTop="25dp" android:layout_toLeftOf="@+id/toggleButton1"
+			android:text="Checks" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:id="@+id/checkTrigger"></Button>
+		<Spinner android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:layout_marginTop="120dp"
+			android:layout_below="@+id/toggleButton1" android:layout_toLeftOf="@+id/toggleButton1"
+			android:id="@+id/spinner1"></Spinner>
+		<ToggleButton android:layout_centerVertical="true"
+			android:layout_centerHorizontal="true" android:id="@+id/toggleButton1"
+			android:layout_height="wrap_content" android:layout_width="70dp"
+			android:text="ToggleButton"></ToggleButton>
+		<Button android:text="List" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:id="@+id/listTrigger"
+			android:layout_alignBaseline="@+id/checkTrigger"
+			android:layout_alignBottom="@+id/checkTrigger"
+			android:layout_centerHorizontal="true"></Button>
+		<Button android:text="Graph" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:id="@+id/graphTrigger"
+			android:layout_alignBottom="@+id/listTrigger"
+			android:layout_toRightOf="@+id/toggleButton1"></Button>
+	</RelativeLayout>
+	<SlidingDrawer android:layout_width="fill_parent"
+		android:id="@+id/slidingDrawer1" android:layout_height="wrap_content"
+		android:handle="@+id/handle" android:content="@+id/content"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true">
+		<ImageButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:src="@android:drawable/ic_menu_more"
+			android:id="@+id/handle"></ImageButton>
+		<LinearLayout android:id="@+id/content"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Boo!" />
+		</LinearLayout>
+	</SlidingDrawer>
+</LinearLayout>
